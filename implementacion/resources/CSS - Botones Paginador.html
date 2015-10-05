@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Botones del páginador - CSS</title>
+	
+	<link href="reset.css?v.01" 	rel="stylesheet">
+	<style>
+		body {
+			background: grey;
+		}
+			section {
+				background: white;
+				height: 20%;
+				margin: 10% auto;
+				width:  80%;
+			}
+
+			.aviso {
+				color: darkgrey;
+				font-style: italic;
+			}
+			
+			.paginador {
+				margin: 5% auto;
+				padding: 20px 0;
+				text-align: center;
+			}
+				
+				.btn-actual {
+					background: transparent !important;
+					border-color: #E6BEBE !important;
+				}
+				.btn-paginador {
+					background: #E6BEBE;
+					border: 2px solid #700A0A;
+					border-radius: 5px;
+					color: #700A0A;
+					display: inline-block;
+					text-decoration: none;
+					font-size: 18px;
+					font-weight: bolder;
+					/*height: 42px;*/
+					margin: 12px 3px;
+					padding: 8px 20px;
+					text-align: center;
+					/*width: 50px;*/
+				}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<section>
+		<div class="paginador">
+            <p class="aviso">Página 2 de 7</p>
+
+            <a   class="btn-paginador"  href="xxx/ver-Pagina/1">
+            	<div> 1 </div>
+            </a>
+            <div class="btn-paginador btn-actual"> 2 </div>
+            <a   class="btn-paginador"  href="xxx/ver-Pagina/3">
+            	<div> 3 </div>
+            </a>
+            <!-- Salta a 3 páginas de la actual -->
+            <a   class="btn-paginador"  href="xxx/ver-Pagina/5">
+            	<div> > </div>
+            </a>
+        </div>
+	</section>
+</body>
+</html>

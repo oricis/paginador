@@ -1,0 +1,10 @@
+
+/*
+ *	Composers -> HELPERS PARA LAS VISTAS
+ *
+ *	@info: 	las clases del directorio "composers" son helpers para la creación de vistas.
+ *			Estas clases, generalmente generan componentes HTML o construyen partes de la  
+ *			página para mantener más limpio el código del fichero de vista.
+ *
+ *
+ */
