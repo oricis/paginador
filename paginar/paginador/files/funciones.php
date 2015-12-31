@@ -52,3 +52,17 @@
 /**
  * Funciones var.
  */
+
+		/**
+         * Comprobar si un número es par
+         *
+         * @param  int  $numero
+         * @return boolean
+         */
+        function isPar( $numero=NULL ) {
+            //prob(self::$clase . " / isPar()");
+
+            return ($numero && ((int)$numero > 0) && ($numero %2 === 0))
+                ? TRUE
+                : FALSE;
+        }
