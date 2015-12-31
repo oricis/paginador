@@ -112,7 +112,7 @@ final class Paginar {
                     //Compone la SELECT -> Añade LIMITE
                     $consulta = self::componerQuery($consulta, $limite_consulta);
 
-                    echo("Query: " . $consulta); //die(); //traza
+                    prob("Query: " . $consulta); //die(); //traza
 
 
                     //Hay resultados que mostrar, almenos para 1 página
@@ -129,7 +129,7 @@ final class Paginar {
                             $botones = BotonesPaginador::get($total_paginas, $num_pagina);
 
                             //Guarda registro de los botones creados para cada página
-                            self::registrarBotns( $total_paginas, $num_pagina, $botones );
+                            //self::registrarBotns( $total_paginas, $num_pagina, $botones );
     
 
                             //Devuelve Datos y HTML botones
@@ -138,7 +138,7 @@ final class Paginar {
                         } else
                             prob(self::$clase . " / get() -> Err: obteniendo datos de la Base de Datos");
                     } else
-                        die(self::$clase . " / get() -> No hay datos que mostrar");
+                        prob(self::$clase . " / get() -> No hay datos que mostrar");
                 } else
                     prob(self::$clase . " / <b>get()</b> -> Err args: falta Query");
             } else
