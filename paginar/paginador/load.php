@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fichero carga de páginador
+ * Fichero carga y configuración
  *
  * Proyecto: paginador
  * Versión 0.2 / Diciembre 2015
